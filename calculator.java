@@ -56,8 +56,6 @@ public class Calculator implements ActionListener
 		addComponents();
 		addActionEvent();
 	}
-	
-	
 	    public void prepareWindow() {
 		frame = new JFrame();
         frame.setTitle("Calculator");
@@ -550,3 +548,5 @@ public static void main(String args[])
 	new Calculator();
 }
 }
+
+// this application make smooth and better
