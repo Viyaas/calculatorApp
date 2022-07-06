@@ -4,7 +4,7 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+// import java frameworks
 import javax.swing.*;
 
 
@@ -19,8 +19,8 @@ public class Calculator implements ActionListener
 	JPanel panel;
 	
 	JLabel label ;
-/////////////////////////////////////////////////////////////////////////	
-	
+
+	// mentioned button patterns
 	JRadioButton onRadioButton = new JRadioButton("on");
     JRadioButton offRadioButton = new JRadioButton("off");
     JButton buttonZero = new JButton("0");
@@ -46,19 +46,16 @@ public class Calculator implements ActionListener
     JButton buttonSqrt = new JButton("\u221A");
     JButton buttonCubrt = new JButton("x\u00B3");
     JButton buttonPI = new JButton("\u03C0");
- 
-//  * \u03C0 pi symbol in xml
-   
-	
+
 	Calculator()
 	{
-		prepareWindow();
+		prepareWindow();     // function passed in constructor
 		addComponents();
 		addActionEvent();
 	}
 	    public void prepareWindow() {
 		frame = new JFrame();
-        frame.setTitle("Calculator");
+        frame.setTitle(" Calculator ");
         frame.setSize(523,523);
         frame.getContentPane().setLayout(null);
         frame.getContentPane().setBackground(Color.black);
@@ -68,7 +65,7 @@ public class Calculator implements ActionListener
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
-		public void addComponents() 
+		public void addComponents() //  Window Package
 		{
 		
 		text = new JTextField();
@@ -77,7 +74,7 @@ public class Calculator implements ActionListener
 		text.setHorizontalAlignment(SwingConstants.RIGHT);
 		frame.add(text);
 		
-		label= new JLabel("Calculator");
+		label= new JLabel(" Viyas ");
 		frame.add(label);
 		label.setBounds(250, 0, 80, 50);
 		label.setForeground(Color.white);
@@ -89,18 +86,21 @@ public class Calculator implements ActionListener
 		panel.setBackground(Color.black);
 		
 		
-////////////////////////////////////////////////////////////////////////////////	
+//	button UIs 
 		panel.add(buttonSeven);  //7
 		buttonSeven.setBackground(Color.red);
+		buttonSeven.setForeground(Color.white);
 		buttonSeven.setFont(new Font("Times New Roman",Font.BOLD,23));
 		
 		panel.add(buttonEight); //8
 	    buttonEight.setBackground(Color.red);
+		buttonEight.setForeground(Color.white);
 	    buttonEight.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    
 	    panel.add(buttonNine);  //9
 	    buttonNine.setBackground(Color.red);
+		buttonNine.setForeground(Color.white);
 	    buttonNine.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    panel.add(onRadioButton); // on
@@ -115,103 +115,123 @@ public class Calculator implements ActionListener
 	   
 	    panel.add(buttonFour); //4
 	    buttonFour.setBackground(Color.red);
+		buttonFour.setForeground(Color.white);
 	    buttonFour.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    panel.add(buttonFive); //5
 	    buttonFive.setBackground(Color.red);
+		buttonFive.setForeground(Color.white);
 	    buttonFive.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    panel.add(buttonSix);  //6
 	    buttonSix.setBackground(Color.red);
+		buttonSix.setForeground(Color.white);
 	    buttonSix.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    panel.add(buttonAdd);  //+ 
 	    buttonAdd.setBackground(Color.red);
+		buttonAdd.setForeground(Color.white);
 	    buttonAdd.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	    panel.add(buttonSubtract); // -
 	    buttonSubtract.setBackground(Color.red);
+		buttonSubtract.setForeground(Color.white);
 	    buttonSubtract.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	     
 	    panel.add(buttonOne); //1	    
 	    buttonOne.setBackground(Color.red);
+		buttonOne.setForeground(Color.white);
 	    buttonOne.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    panel.add(buttonTwo); //2
 	    buttonTwo.setBackground(Color.red);
+		buttonTwo.setForeground(Color.white);
 	    buttonTwo.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    
 	    panel.add(buttonThree);//3
 	    buttonThree.setBackground(Color.red);
+		buttonThree.setForeground(Color.white);
 	    buttonThree.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    panel.add(buttonDivide); //  "/"
 	    buttonDivide.setBackground(Color.red);
+		buttonDivide.setForeground(Color.white);
 	    buttonDivide.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	    panel.add(buttonMultiple); // "*"
 	    buttonMultiple.setBackground(Color.red);
+		buttonMultiple.setForeground(Color.white);
 	    buttonMultiple.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	    
 	    panel.add(buttonDot); // "."
 	    buttonDot.setBackground(Color.red);
+		buttonDot.setForeground(Color.white);
 	    buttonDot.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	    
 	    panel.add(buttonZero);// 0
 	    buttonZero.setBackground(Color.red);
+		buttonZero.setForeground(Color.white);
 	    buttonZero.setFont(new Font("Times New Roman",Font.BOLD,23));
 	    
 	    
 	    panel.add(buttonEqual); // =
 	    buttonEqual.setBackground(Color.red);
+		buttonEqual.setForeground(Color.white);
 	    buttonEqual.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	    
 	    panel.add(buttonClear); // clear
 	    buttonClear.setBackground(Color.red);
+		buttonClear.setForeground(Color.white);
 	    buttonClear.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	    
 	    panel.add(buttonDelete);// Delete
 	    buttonDelete.setBackground(Color.red);
+		buttonDelete.setForeground(Color.white);
 	    buttonDelete.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	    panel.add(buttonSquare); // Square
 	    buttonSquare.setBackground(Color.red);
+		buttonSquare.setForeground(Color.white);
 	    buttonSquare.setFont(new Font("Digital",Font.BOLD,23));
 	    
 	    panel.add(buttonSqrt); // Square root
 		buttonSqrt.setBackground(Color.red);
+		buttonSqrt.setForeground(Color.white);
 		buttonSqrt.setFont(new Font("Digital",Font.BOLD,23));
 		
 		panel.add(buttonReciprocal); // Reciprocal
 		buttonReciprocal.setBackground(Color.red);
+		buttonReciprocal.setForeground(Color.white);
 		buttonReciprocal.setFont(new Font("Digital",Font.BOLD,23));
 		
 		panel.add(buttonCubrt);// Cube Root
 		buttonCubrt.setBackground(Color.red);
+		buttonCubrt.setForeground(Color.white);
 		buttonCubrt.setFont(new Font("Digital",Font.BOLD,23));
 		
 		panel.add(buttonPI); // PI
 		buttonPI.setBackground(Color.red);
+		buttonPI.setForeground(Color.white);
 		buttonPI.setFont(new Font("Digital",Font.BOLD,23));
 		
 	
 	}
 	
-		public void addActionEvent()
+		public void addActionEvent()   // actionEvent_Perfomed 
 		{
-			onRadioButton.addActionListener(this);
+			onRadioButton.addActionListener(this);     
+	        // ON_OFF_Function
 	        offRadioButton.addActionListener(this);
-	        //////////////////////////////////////
 	        buttonClear.addActionListener(this);
 	        buttonDelete.addActionListener(this);
 	        buttonEqual.addActionListener(this);	        
-	        buttonSqrt.addActionListener(this);
+	        buttonSqrt.addActionListener(this);          
 	        buttonSquare.addActionListener(this);
 	        buttonReciprocal.addActionListener(this);
 	        buttonCubrt.addActionListener(this);
@@ -219,10 +239,10 @@ public class Calculator implements ActionListener
 	        buttonAdd.addActionListener(this);
 	        buttonDivide.addActionListener(this);
 	        buttonSubtract.addActionListener(this);
-	        ////////////////////////////////////////
+	        // mathamatical_Functions
 	        buttonSeven.addActionListener(this);
 	        buttonEight.addActionListener(this);
-	        buttonNine.addActionListener(this);
+	        buttonNine.addActionListener(this);        
 	        buttonFour.addActionListener(this);
 	        buttonFive.addActionListener(this);
 	        buttonSix.addActionListener(this);
@@ -232,7 +252,7 @@ public class Calculator implements ActionListener
 	        buttonZero.addActionListener(this);
 	        buttonDot.addActionListener(this);
 	        buttonPI.addActionListener(this);
-
+            // Number_Pattern
 //	        this.add(panel);
 		}
 		
@@ -484,7 +504,7 @@ public class Calculator implements ActionListener
 	
 }
 	public void enable()
-	{
+	{  // OnButton Perform to enable blow pattern
 		onRadioButton.setEnabled(false);
         offRadioButton.setEnabled(true);
         text.setEnabled(true);
@@ -514,7 +534,7 @@ public class Calculator implements ActionListener
         buttonDot.setEnabled(true);
 	}
 	public void disable()
-	{
+	{  // OffButton Perform to disable Function
 		onRadioButton.setEnabled(true);
         offRadioButton.setEnabled(false);
         text.setText("");
